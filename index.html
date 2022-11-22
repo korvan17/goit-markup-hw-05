@@ -57,7 +57,7 @@
       <section class="hero section">
         <div class="hero-block container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Наші переваги -->
@@ -121,6 +121,7 @@
           <ul class="list">
             <li>
               <img src="./images/programming.jpg" alt="програмування" width="370" height="294" />
+              <p class="portfolio-text">Десктопні додатки</p>
             </li>
             <li>
               <img
@@ -129,9 +130,11 @@
                 width="370"
                 height="294"
               />
+              <p class="portfolio-text">Мобільні додатки</p>
             </li>
             <li>
               <img src="./images/color.jpg" alt="палітра" width="370" height="294" />
+              <p class="portfolio-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -374,7 +377,7 @@
             </ul>
           </address>
         </div>
-        <div class="socialmesh-footer conteiner ">
+        <div class="socialmesh-footer conteiner">
           <span class="footer-text-soc">приєднуйтесь</span>
           <ul class="footer-socialmesh-ul">
             <li class="footer-socialmesh-li">
@@ -412,5 +415,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>&#10005;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
